@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 0.5rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        document.write(`<table style="border: 3px blue solid; color: crimson; background-color: rgb(181, 233, 220);" rules="all" cellpadding='10';>`);
+        document.write(`<tr>`);
+            for(i=2;i<=9;i++){
+                document.write(`<td>`)
+                    for(j=1;j<=9;j++){
+                        document.write(`${i}*${j}=${i*j}<br>`);
+                    }
+                document.write(`</td>`)
+            }    
+        document.write(`</tr>`);
+        document.write(`</table>`);
+        
+        // for(i=1;i<9;i++){
+        //     document.write(i);
+        // }
+
+
+    </script>
+</body>
+</html>
